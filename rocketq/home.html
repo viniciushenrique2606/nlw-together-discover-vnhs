@@ -1,6 +1,8 @@
 <!DOCTYPE html> 
     <head> 
         <title>Criar Sala - Rocket.Q</title> 
+        <link rel="stylesheet" href="styles/home.css"/>
+        <link rel="stylesheet" href="styles/global.css"/>
     </head> 
     <body>  
         <header>
@@ -11,10 +13,13 @@
             <div class="container">
                 <section>
                     <h2>Entre como participante</h2> 
-                    <form> 
+                    <form action=""> 
                         <label class="sr-only" for="room-id">Código da Sala</label> <!--o for="room-id está conectando a label ao input"-->
-                        <input type="text" id="room-id"> 
-                        <button>Entrar na Sala</button>
+                        <input type="number" id="room-id" placeholder="Código da Sala"> 
+                        <button> 
+                            <img src="assets/enter-room.svg" alt="Entrar na sala">
+                            Entrar na Sala
+                        </button>
                     </form>
                 </section> 
 
@@ -22,7 +27,14 @@
                     <div></div>
                     <div>ou</div>
                     <div></div>
-                </div>
+                </div> 
+                <section> 
+                    <h2>Crie sua própria sala de forma fácil</h2>
+                    <a href="create-romm.html"> 
+                        <img src="assets/users.svg"/> 
+                    </a>
+                </section>
+
             </div>
         </main>
     </body> 
